@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -18,6 +18,139 @@
             </h1>
         </div>
     </footer>
+
+    <main class="main">
+        <section class="container-form">
+            <form>
+                <div class="container-input">
+                    <p class="label-input">Project</p>
+                    <div class="inline-content">
+                        <div class="input-options">
+                            <input checked type="radio" name="project-type" id="groovy-project">
+                            <label for="groovy-project">Gradle - Groovy</label>
+                        </div>
+
+                        <div class="input-options">
+                            <input type="radio" name="project-type" id="kotlin-project">
+                            <label for="kotlin-project">Gradle - Kotlin</label>
+                        </div>
+                    </div>
+
+                    <div class="input-options">
+                        <input type="radio" name="project-type" id="maven-project">
+                        <label for="maven-project">Maven</label>
+                    </div>
+
+                    <p class="label-input">Language</p>
+                    <div class="inline-content">
+                        <div class="input-options">
+                            <input checked type="radio" name="language-type" id="java-lan">
+                            <label for="java-lan">Java</label>
+                        </div>
+
+                        <div class="input-options">
+                            <input type="radio" name="language-type" id="kotlin-lan">
+                            <label for="kotlin-lan">Kotlin</label>
+                        </div>
+
+                        <div class="input-options">
+                            <input type="radio" name="language-type" id="groovy-lan">
+                            <label for="groovy-lan">Groovy</label>
+                        </div>
+                    </div>
+
+                    <p class="label-input">Spring Boot</p>
+                    <div class="inline-content">
+                        <div class="input-options">
+                            <input type="radio" name="project-version" id="v-3-4-1">
+                            <label for="v-3-4-1">3.4.1 (SNAPSHOT)</label>
+                        </div>
+
+                        <div class="input-options">
+                            <input checked type="radio" name="project-version" id="v-3-4-0">
+                            <label for="v-3-4-0">3.4.0</label>
+                        </div>
+                    </div>
+                    <div class="inline-content">
+                        <div class="input-options">
+                            <input type="radio" name="project-version" id="v-3-3-7">
+                            <label for="v-3-3-7">3.3.7 (SNAPSHOT)</label>
+                        </div>
+
+                        <div class="input-options">
+                            <input type="radio" name="project-version" id="v-3-3-6">
+                            <label for="v-3-3-6">3.3.6</label>
+                        </div>
+                    </div>
+
+                    <p class="label-input">Project Metadata</p>
+                    <p class="label-input-text">Group</p>
+                    <div class="input-text">
+                        <label for="group-name"></label>
+                        <input type="text" name="group-name" id="group-name" value="com.example">
+                        <div class="borde-label"></div>
+                    </div>
+
+                    <p class="label-input-text">Artifact</p>
+                    <div class="input-text">
+                        <label for="artifact-name"></label>
+                        <input type="text" name="artifact-name" id="artifact-name" value="demo">
+                        <div class="borde-label"></div>
+                    </div>
+
+                    <p class="label-input-text">Name</p>
+                    <div class="input-text">
+                        <label for="project-name"></label>
+                        <input type="text" name="project-name" id="project-name" value="demo">
+                        <div class="borde-label"></div>
+                    </div>
+
+                    <p class="label-input-text">Description</p>
+                    <div class="input-text">
+                        <label for="description-project"></label>
+                        <input type="text" name="description-project" id="description-project"
+                            value="Demo project for Spring Boot">
+                        <div class="borde-label"></div>
+                    </div>
+
+                    <p class="label-input-text">Package name</p>
+                    <div class="input-text">
+                        <label for="package-name"></label>
+                        <input type="text" name="package-name" id="package-name" value="com.example.demo">
+                        <div class="borde-label"></div>
+                    </div>
+
+                    <p class="label-input-text">Packaging</p>
+                    <div class="inline-content">
+                        <div class="input-options">
+                            <input checked type="radio" name="packaging-type" id="jar-type">
+                            <label for="jar-type">Java</label>
+                        </div>
+                        <div class="input-options">
+                            <input checked type="radio" name="packaging-type" id="war-type">
+                            <label for="war-type">War</label>
+                        </div>
+                    </div>
+
+                    <p class="label-input-text">Java</p>
+                    <div class="inline-content">
+                        <div class="input-options">
+                            <input type="radio" name="java-version" id="java-version">
+                            <label for="java-version">23</label>
+                        </div>
+                        <div class="input-options">
+                            <input type="radio" name="java-version" id="java-version">
+                            <label for="java-version">21</label>
+                        </div>
+                        <div class="input-options">
+                            <input checked type="radio" name="java-version" id="java-version">
+                            <label for="java-version">17</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </section>
+    </main>
 </body>
 
 </html>
