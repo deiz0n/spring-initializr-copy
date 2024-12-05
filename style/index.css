@@ -6,12 +6,12 @@
     font-family: Arial;
 }
 
-.footer,
+.header,
 .main {
     background-color: #1b1f23;
 }
 
-.footer span {
+.header span {
     color: #6aae3e;
 }
 
@@ -36,26 +36,26 @@
 }
 
 @media (max-width: 600px) {
-    .container-footer {
+    .container-header {
         display: flex;
         padding-top: 5%;
         padding-bottom: 4%;
         margin-left: 5%;
     }
-    .footer {
-        border-bottom: 1px solid #848c8f;
+    .header {
+        border-bottom: 1px solid #f0f1f1;
     }
-    .footer img {
+    .header img {
         height: 45px;
         width: 45px;
         margin-right: 2%;
     }
-    .footer h1 {
+    .header h1 {
         display: block;
         font-size: 18px;
         letter-spacing: -1px;
     }
-    .footer h1 div {
+    .header h1 div {
         letter-spacing: 1px;
     }
     .main {
