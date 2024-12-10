@@ -7,8 +7,9 @@
 }
 
 .header,
-.main {
+.main{
     background-color: #1b1f23;
+    z-index: 2;
 }
 
 .header span {
@@ -33,6 +34,31 @@
 
 .input-text input:not(:focus) {
     color: #f0f1f1;
+}
+
+.btn-dependencies,
+.btns-footer {
+    border: 2px #f0f1f1 solid;
+    background-color: #1b1f23;
+    outline: none;
+    padding-block: 2.5%;
+    padding-inline: 2%;
+    border-radius: 5%;
+    width: max-content;
+    font-weight: bold;
+}
+
+.container-btns {
+    position: relative;
+    background-color: #262a2d;
+    position: fixed;
+    align-items: center;
+}
+
+.btns-footer {
+    position: relative;
+    margin-top: 2%;
+    left: 22%;
 }
 
 @media (max-width: 600px) {
@@ -61,8 +87,10 @@
     .main {
         padding-top: 1%;
         padding-left: 3%;
+        position: static;
     }
-    .label-input {
+    .label-input,
+    .title-container {
         font-size: large;
         font-weight: bold;
         margin-bottom: 1%;
@@ -95,5 +123,24 @@
         width: 97%;
         cursor: text;
         margin-top: 2%;
+    }
+    .container-dependecies {
+        margin-top: 5%;
+        height: 200px;
+    }
+    .btn-dependencies {
+        position: absolute;
+        left: 82%;
+    }
+    .border-bottom {
+        margin: 3% 4% 0 auto;
+        border-bottom: 0.5px #404649 solid;
+        width: 97%;
+        position: relative;
+    }
+    .container-btns {
+        height: 60px;
+        width: 100%;
+        bottom: 0%;
     }
 }
