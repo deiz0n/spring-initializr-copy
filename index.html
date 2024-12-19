@@ -11,5 +11,92 @@
       <img src="assets/icons8-spring-boot.svg" alt="Logo do Spring" />
       <h1><span>spring</span> initializr</h1>
     </header>
+
+    <main class="main-container">
+      <section class="settings-container">
+        <div class="input-container">
+          <span class="project-container">
+            <p class="title">Project</p>
+            <input type="radio" name="type-project" id="groovy-project" />
+            <label for="groovy-project"
+              ><div class="input-radio"></div>
+              Gradle - Groovy
+            </label>
+
+            <input
+              checked
+              type="radio"
+              name="type-project"
+              id="kotlin-project"
+            />
+            <label for="kotlin-project"
+              ><div class="input-radio"></div>
+              Gradle - Kotlin
+            </label>
+
+            <div>
+              <input type="radio" name="type-project" id="maven-project" />
+              <label for="maven-project"
+                ><div class="input-radio"></div>
+                Maven
+              </label>
+            </div>
+          </span>
+
+          <span class="language-container">
+            <p class="title">Language</p>
+            <input
+              checked
+              type="radio"
+              name="type-language"
+              id="java-language"
+            />
+            <label for="java-language"
+              ><div class="input-radio"></div>
+              Java</label
+            >
+
+            <input type="radio" name="type-language" id="kotlin-language" />
+            <label for="kotlin-language"
+              ><div class="input-radio"></div>
+              Kotlin</label
+            >
+
+            <input type="radio" name="type-language" id="groovy-language" />
+            <label for="groovy-language"
+              ><div class="input-radio"></div>
+              Groovy</label
+            >
+          </span>
+        </div>
+
+        <span class="version-container">
+          <p class="title">Spring Boot</p>
+          <input type="radio" name="version" id="version-3.4.1" />
+          <label for="version-3.4.1"
+            ><div class="input-radio"></div>
+            3.4.1 (Snapshot)</label
+          >
+
+          <input checked type="radio" name="version" id="version-3.4.0" />
+          <label for="version-3.4.0"
+            ><div class="input-radio"></div>
+            3.4.0</label
+          >
+
+          <input type="radio" name="version" id="version-3.3.7" />
+          <label for="version-3.3.7"
+            ><div class="input-radio"></div>
+            3.3.7 (Snapshot)</label
+          >
+
+          <input type="radio" name="version" id="version-3.3.6" />
+          <label for="version-3.3.6"
+            ><div class="input-radio"></div>
+            3.3.6</label
+          >
+        </span>
+      </section>
+    </main>
   </body>
 </html>
