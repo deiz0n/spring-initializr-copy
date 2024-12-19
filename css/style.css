@@ -10,12 +10,12 @@
 .header-container {
     display: flex;
     font-size: 20px;
-    width: 82%;
+    width: 80%;
     height: 130px;
     margin: 0 auto;
     padding-left: 30px;
-    border-inline: 1px solid #303337;
-    border-bottom: 1px solid #303337;
+    border-inline: 1px solid #484c52;
+    border-bottom: 1px solid #484c52;
 }
 
 .header-container img {
@@ -36,10 +36,16 @@
 }
 
 .main-container {
-    width: 82%;
+    width: 80%;
     margin: 0 auto;
     padding-left: 30px;
     border-inline: 1px solid #303337;
+    display: flex;
+}
+
+.settings-container {
+    width: 50%;
+    border-right: 1px solid #303337;
 }
 
 .input-container {
@@ -108,3 +114,7 @@
 .version-container label {
     text-transform: uppercase;
 }
+
+.dependencies-container {
+    width: 50%;
+} 
