@@ -6,8 +6,8 @@
 }
 
 body {
-    position: relative;
     background-color: #1b1f23;
+    z-index: 2;
 }
 
 #header-container {
@@ -16,7 +16,7 @@ body {
     margin-inline: 2%;;
     left: 5.5%;
     display: flex;
-    position: absolute;
+    position: relative;
     background-color: #1b1f23;
     border-bottom: 1px solid #52555a;
 }
@@ -40,13 +40,14 @@ body {
     letter-spacing: -2px;
 }
 
-
 #container-border-left,
 #container-border-rigth {
+    top: 0;
     position: fixed;
     width: 5%;
     height: 100%;
     background-color: #1b1f23;;
+    z-index: 1;
 }
 
 #container-border-left {
