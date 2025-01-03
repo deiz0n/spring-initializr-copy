@@ -11,25 +11,25 @@ body {
 }
 
 #header-container {
-    display: flex;
     width: 85%;
-    height: 130px;
-    left: 4.5%;
-    margin-inline: 3%;
+    height: 140px;
+    margin-inline: 2%;;
+    left: 5.5%;
+    display: flex;
     position: absolute;
     background-color: #1b1f23;
     border-bottom: 1px solid #52555a;
 }
 
 #header-container img{
-    margin-top: 35px;
+    margin-top: 42px;
     width: 53px;
     height: 53px;
 }
 
 #header-container h1 {
     color: #fff;
-    margin-top: 42px;
+    margin-top: 47px;
     margin-left: 10px;
     font-size: 35px;
     letter-spacing: 1px;
@@ -78,7 +78,7 @@ body {
 }
 
 #line {
-    top: 37.2px;
+    top: 56px;
     left: 22px;
     width: 30px;
     position: absolute;
