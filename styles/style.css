@@ -1,0 +1,102 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+
+#container-border-left,
+#container-border-rigth {
+    position: fixed;
+    width: 5%;
+    height: 100%;
+    background-color: #1b1f23;;
+}
+
+#container-border-left {
+    border-right: 1px solid #52555a;
+}
+
+#container-border-left a  {
+    text-decoration: none;
+}
+
+#container-border-rigth {
+    right: 0;
+    border-left: 1px solid #52555a;
+}
+
+#history-icon,
+#github-icon {
+    width: 35px;
+    height: 35px;
+    position: absolute;
+}
+
+#lines-icon {
+    top: 15px;
+    left: 25px;
+    width: 23px;
+    height: 23px;
+    position: absolute;
+}
+
+#line {
+    top: 37.2px;
+    left: 22px;
+    width: 30px;
+    position: absolute;
+    border-bottom: 1px solid #52555a;
+}
+
+#history-icon {
+    top: 70px;
+    left: 20px;
+}
+
+#github-icon {
+    bottom: 20px;
+    left: 20px;
+}
+
+#footer-container {
+    position: fixed;
+    height: 90px;
+    width: 90%;
+    right: 5%;
+    bottom: 0;
+    background-color: #262a2d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-btns ul {
+    list-style: none;
+}
+
+.footer-btns a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    border: 1px solid #fff;
+    margin: 10px;
+    padding: 10px 18px;
+    font-size: 16px;
+    background-color: #1b1f23;
+    transition: 0.3s;
+}
+
+.footer-btns a:hover{
+    color: #000;
+    background-color: #fff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-floating {
+    margin-left: 6px;
+}
