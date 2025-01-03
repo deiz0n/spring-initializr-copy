@@ -5,6 +5,41 @@
     font-family: Helvetica;
 }
 
+body {
+    position: relative;
+    background-color: #1b1f23;
+}
+
+#header-container {
+    display: flex;
+    width: 85%;
+    height: 130px;
+    left: 4.5%;
+    margin-inline: 3%;
+    position: absolute;
+    background-color: #1b1f23;
+    border-bottom: 1px solid #52555a;
+}
+
+#header-container img{
+    margin-top: 35px;
+    width: 53px;
+    height: 53px;
+}
+
+#header-container h1 {
+    color: #fff;
+    margin-top: 42px;
+    margin-left: 10px;
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+
+#part-green {
+    color: #5d9639;
+    letter-spacing: -2px;
+}
+
 
 #container-border-left,
 #container-border-rigth {
