@@ -58,11 +58,11 @@
     <main id="main-container">
       <section id="section-form">
         <form id="form-container">
-          <span>
+          <span id="inline-container">
             <div>
               <p class="title-input">Project</p>
               <div class="input-radio">
-                <span style="display: flex">
+                <span id="inline-container">
                   <input type="radio" name="project-type" id="project-groovy" />
                   <label for="project-groovy">
                     <div class="radio"></div>
@@ -93,18 +93,186 @@
               </div>
             </div>
 
-            <div id="input-version">
-              <p class="title-input">Spring Boot</p>
+            <div id="input-language">
+              <p class="title-input">Language</p>
               <div class="input-radio">
                 <span>
                   <input
+                    checked
                     type="radio"
-                    name="spring-version"
-                    id="3.4.2-version"
+                    name="project-language"
+                    id="java-language"
                   />
-                  <label for="3.4.2-version">
+                  <label for="java-language">
                     <div class="radio"></div>
-                    3.4.2 (Snapshot)
+                    Java
+                  </label>
+                </span>
+
+                <span>
+                  <input
+                    type="radio"
+                    name="project-language"
+                    id="kotlin-language"
+                  />
+                  <label for="kotlin-language">
+                    <div class="radio"></div>
+                    Kotlin
+                  </label>
+                </span>
+
+                <span>
+                  <input
+                    type="radio"
+                    name="project-language"
+                    id="languague-groovy"
+                  />
+                  <label for="languague-groovy">
+                    <div class="radio"></div>
+                    Groovy
+                  </label>
+                </span>
+              </div>
+            </div>
+          </span>
+
+          <div id="input-version">
+            <p class="title-input">Spring Boot</p>
+            <div class="input-radio">
+              <span>
+                <input type="radio" name="spring-version" id="3.4.2-version" />
+                <label for="3.4.2-version">
+                  <div class="radio"></div>
+                  3.4.2 (Snapshot)
+                </label>
+              </span>
+
+              <span>
+                <input
+                  checked
+                  type="radio"
+                  name="spring-version"
+                  id="3.4.1-version"
+                />
+                <label for="3.4.1-version">
+                  <div class="radio"></div>
+                  3.4.1
+                </label>
+              </span>
+
+              <span>
+                <input type="radio" name="spring-version" id="3.3.8-version" />
+                <label for="3.3.8-version">
+                  <div class="radio"></div>
+                  3.3.8 (Snapshot)
+                </label>
+              </span>
+
+              <span>
+                <input type="radio" name="spring-version" id="3.3.7-version" />
+                <label for="3.3.7-version">
+                  <div class="radio"></div>
+                  3.3.7
+                </label>
+              </span>
+            </div>
+          </div>
+
+          <div>
+            <p class="title-input">Project Metadata</p>
+            <div class="input-text">
+              <label for="group-type">Group</label>
+              <input
+                type="text"
+                name="group-type"
+                id="group-type"
+                value="com.example"
+              />
+            </div>
+
+            <div class="input-text">
+              <label for="artifact-type">Artifact</label>
+              <input
+                type="text"
+                name="artifact-type"
+                id="artifact-type"
+                value="demo"
+              />
+            </div>
+
+            <div class="input-text">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" value="demo" />
+            </div>
+
+            <div class="input-text">
+              <label for="description">Description</label>
+              <input
+                type="text"
+                name="description"
+                id="description"
+                value="demo project for Spring Boot"
+              />
+            </div>
+
+            <div class="input-text">
+              <label for="package-name">Package name</label>
+              <input
+                type="text"
+                name="package-name"
+                id="package-name"
+                value="com.example.demo"
+              />
+            </div>
+          </div>
+
+          <div>
+            <div id="input-java">
+              <p class="title-input">Packaging</p>
+              <div class="input-radio">
+                <span>
+                  <input
+                    checked
+                    type="radio"
+                    name="packaging-type"
+                    id="packaging-jar"
+                  />
+                  <label for="packaging-jar">
+                    <div class="radio"></div>
+                    Jar
+                  </label>
+                </span>
+
+                <span>
+                  <input
+                    type="radio"
+                    name="packaging-type"
+                    id="packaging-war"
+                  />
+                  <label for="packaging-war">
+                    <div class="radio"></div>
+                    War
+                  </label>
+                </span>
+              </div>
+            </div>
+
+            <div>
+              <p class="title-input">Java</p>
+              <div class="input-radio">
+                <span>
+                  <input type="radio" name="java-version" id="version-23" />
+                  <label for="version-23">
+                    <div class="radio"></div>
+                    23
+                  </label>
+                </span>
+
+                <span>
+                  <input type="radio" name="java-version" id="version-21" />
+                  <label for="version-21">
+                    <div class="radio"></div>
+                    21
                   </label>
                 </span>
 
@@ -112,81 +280,15 @@
                   <input
                     checked
                     type="radio"
-                    name="spring-version"
-                    id="3.4.1-version"
+                    name="java-version"
+                    id="version-17"
                   />
-                  <label for="3.4.1-version">
+                  <label for="version-17">
                     <div class="radio"></div>
-                    3.4.1
-                  </label>
-                </span>
-
-                <span>
-                  <input
-                    type="radio"
-                    name="spring-version"
-                    id="3.3.8-version"
-                  />
-                  <label for="3.3.8-version">
-                    <div class="radio"></div>
-                    3.3.8 (Snapshot)
-                  </label>
-                </span>
-
-                <span>
-                  <input
-                    type="radio"
-                    name="spring-version"
-                    id="3.3.7-version"
-                  />
-                  <label for="3.3.7-version">
-                    <div class="radio"></div>
-                    3.3.7
+                    17
                   </label>
                 </span>
               </div>
-            </div>
-          </span>
-
-          <div id="input-language">
-            <p class="title-input">Language</p>
-            <div class="input-radio">
-              <span>
-                <input
-                  checked
-                  type="radio"
-                  name="project-language"
-                  id="java-language"
-                />
-                <label for="java-language">
-                  <div class="radio"></div>
-                  Java
-                </label>
-              </span>
-
-              <span>
-                <input
-                  type="radio"
-                  name="project-language"
-                  id="kotlin-language"
-                />
-                <label for="kotlin-language">
-                  <div class="radio"></div>
-                  Kotlin
-                </label>
-              </span>
-
-              <span>
-                <input
-                  type="radio"
-                  name="project-language"
-                  id="languague-groovy"
-                />
-                <label for="languague-groovy">
-                  <div class="radio"></div>
-                  Groovy
-                </label>
-              </span>
             </div>
           </div>
         </form>

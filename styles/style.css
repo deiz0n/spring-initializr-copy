@@ -101,8 +101,8 @@ body {
     margin-top: 35px;
     display: flex;
     width: 85%;
-    height: 100%;
-    margin-inline: 2%;;
+    height: 680px;
+    margin-inline: 2%;
     left: 5.5%;
     position: relative;
 }
@@ -120,6 +120,10 @@ body {
 #form-container {
     width: max-content;
     position: relative;
+    display: block;
+}
+
+#inline-container {
     display: flex;
 }
 
@@ -145,6 +149,11 @@ body {
 
 #input-version {
     margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+#input-java {
+    margin-bottom: 15px;
 }
 
 .title-input {
@@ -152,6 +161,7 @@ body {
     font-family: 16px;
     margin-bottom: 10px;
 }
+
 
 .radio {
     width: 16px;
@@ -169,6 +179,35 @@ body {
 .input-radio input:checked + label .radio {
     background-color: #65af37;
     border: none;
+}
+
+.input-text {
+    color: #fff;
+    display: flex;
+    justify-content: right;
+    width: 525px;
+}
+
+.input-text label {
+    text-align: right;
+    position: relative;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.input-text input {
+    border: none;
+    background-color: #1b1f23;
+    outline: none;
+    border-bottom: 3px solid #fff;
+    width: 400px;
+    position: relative;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+
+.input-text input:focus {
+    border-color: #5d9639;
 }
 
 /* Estilização da sessão das dependências */
