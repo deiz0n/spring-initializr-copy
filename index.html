@@ -206,11 +206,11 @@
             </div>
 
             <div class="input-text">
-              <label for="description">Description</label>
+              <label for="description-project">Description</label>
               <input
                 type="text"
-                name="description"
-                id="description"
+                name="description-project"
+                id="description-project"
                 value="demo project for Spring Boot"
               />
             </div>
@@ -293,7 +293,17 @@
           </div>
         </form>
       </section>
-      <section id="section-dependencies"></section>
+
+      <section id="section-dependencies">
+        <div id="inline-container">
+          <p id="section-title">Dependencies</p>
+          <a id="section-btn" href="#">
+            <span class="bold">Add Dependencies...</span>
+            <span class="text-floating">Crtl + B</span>
+          </a>
+        </div>
+        <p id="description">No dependency selected</p>
+      </section>
     </main>
 
     <footer id="footer-container">
