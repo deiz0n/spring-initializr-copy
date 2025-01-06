@@ -141,6 +141,7 @@ body {
 .input-radio label {
     margin-right: 15px;
     margin-bottom: 7px;
+    cursor: pointer;
 }
 
 #input-language {
@@ -161,7 +162,6 @@ body {
     font-family: 16px;
     margin-bottom: 10px;
 }
-
 
 .radio {
     width: 16px;
@@ -244,9 +244,12 @@ body {
     transition: 0.3s;
 }
 
-.footer-btns a:hover{
-    color: #000;
+.footer-btns a:hover {
     background-color: #fff;
+}
+
+.footer-btns a:hover span{
+    color: #000;
 }
 
 .bold {
