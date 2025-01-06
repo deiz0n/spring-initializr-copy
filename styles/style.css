@@ -3,13 +3,14 @@
     margin: 0;
     box-sizing: border-box;
     font-family: Helvetica;
+    color: #fff;
 }
 
 body {
     background-color: #1b1f23;
-    z-index: 2;
 }
 
+/* Estilização do header */
 #header-container {
     width: 85%;
     height: 140px;
@@ -28,7 +29,6 @@ body {
 }
 
 #header-container h1 {
-    color: #fff;
     margin-top: 47px;
     margin-left: 10px;
     font-size: 35px;
@@ -40,6 +40,7 @@ body {
     letter-spacing: -2px;
 }
 
+/* Estilização dos barras laterais */
 #container-border-left,
 #container-border-rigth {
     top: 0;
@@ -47,7 +48,6 @@ body {
     width: 5%;
     height: 100%;
     background-color: #1b1f23;;
-    z-index: 1;
 }
 
 #container-border-left {
@@ -96,6 +96,87 @@ body {
     left: 20px;
 }
 
+/* Estilização do main */
+#main-container {
+    margin-top: 35px;
+    display: flex;
+    width: 85%;
+    height: 100%;
+    margin-inline: 2%;;
+    left: 5.5%;
+    position: relative;
+}
+
+#section-form,
+#section-dependencies {
+    width: 50%;
+}
+
+/* Estilização da sessão do formulário */
+#section-form {
+    border-right: 1px solid #52555a;
+}
+
+#form-container {
+    width: max-content;
+    position: relative;
+    display: flex;
+}
+
+.input-radio {
+    position: relative;
+    flex-wrap: wrap;
+    position: relative;
+    display: inline;
+}
+
+.input-radio input {
+    display: none;
+}
+
+.input-radio label {
+    margin-right: 15px;
+    margin-bottom: 7px;
+}
+
+#input-language {
+    margin-left: 75px;
+}
+
+#input-version {
+    margin-top: 20px;
+}
+
+.title-input {
+    font-weight: bold;
+    font-family: 16px;
+    margin-bottom: 10px;
+}
+
+.radio {
+    width: 16px;
+    height: 16px;
+    margin-right: 3px;
+    border: 2px solid #fff;
+    display: inline-flex;
+    border-radius: 50%;
+}
+
+.input-radio input:checked + label{
+    color: #65af37;
+}
+
+.input-radio input:checked + label .radio {
+    background-color: #65af37;
+    border: none;
+}
+
+/* Estilização da sessão das dependências */
+#section-dependencies {
+    margin-left: 2%;
+}
+
+/* Estilização do footer */
 #footer-container {
     position: fixed;
     height: 90px;

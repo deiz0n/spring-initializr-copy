@@ -55,6 +55,145 @@
       </a>
     </div>
 
+    <main id="main-container">
+      <section id="section-form">
+        <form id="form-container">
+          <span>
+            <div>
+              <p class="title-input">Project</p>
+              <div class="input-radio">
+                <span style="display: flex">
+                  <input type="radio" name="project-type" id="project-groovy" />
+                  <label for="project-groovy">
+                    <div class="radio"></div>
+                    Gradle - Groovy
+                  </label>
+                </span>
+
+                <span>
+                  <input
+                    checked
+                    type="radio"
+                    name="project-type"
+                    id="project-kotlin"
+                  />
+                  <label for="project-kotlin">
+                    <div class="radio"></div>
+                    Gradle - Kotlin
+                  </label>
+                </span>
+
+                <span>
+                  <input type="radio" name="project-type" id="project-maven" />
+                  <label for="project-maven">
+                    <div class="radio"></div>
+                    Maven
+                  </label>
+                </span>
+              </div>
+            </div>
+
+            <div id="input-version">
+              <p class="title-input">Spring Boot</p>
+              <div class="input-radio">
+                <span>
+                  <input
+                    type="radio"
+                    name="spring-version"
+                    id="3.4.2-version"
+                  />
+                  <label for="3.4.2-version">
+                    <div class="radio"></div>
+                    3.4.2 (Snapshot)
+                  </label>
+                </span>
+
+                <span>
+                  <input
+                    checked
+                    type="radio"
+                    name="spring-version"
+                    id="3.4.1-version"
+                  />
+                  <label for="3.4.1-version">
+                    <div class="radio"></div>
+                    3.4.1
+                  </label>
+                </span>
+
+                <span>
+                  <input
+                    type="radio"
+                    name="spring-version"
+                    id="3.3.8-version"
+                  />
+                  <label for="3.3.8-version">
+                    <div class="radio"></div>
+                    3.3.8 (Snapshot)
+                  </label>
+                </span>
+
+                <span>
+                  <input
+                    type="radio"
+                    name="spring-version"
+                    id="3.3.7-version"
+                  />
+                  <label for="3.3.7-version">
+                    <div class="radio"></div>
+                    3.3.7
+                  </label>
+                </span>
+              </div>
+            </div>
+          </span>
+
+          <div id="input-language">
+            <p class="title-input">Language</p>
+            <div class="input-radio">
+              <span>
+                <input
+                  checked
+                  type="radio"
+                  name="project-language"
+                  id="java-language"
+                />
+                <label for="java-language">
+                  <div class="radio"></div>
+                  Java
+                </label>
+              </span>
+
+              <span>
+                <input
+                  type="radio"
+                  name="project-language"
+                  id="kotlin-language"
+                />
+                <label for="kotlin-language">
+                  <div class="radio"></div>
+                  Kotlin
+                </label>
+              </span>
+
+              <span>
+                <input
+                  type="radio"
+                  name="project-language"
+                  id="languague-groovy"
+                />
+                <label for="languague-groovy">
+                  <div class="radio"></div>
+                  Groovy
+                </label>
+              </span>
+            </div>
+          </div>
+        </form>
+      </section>
+      <section id="section-dependencies"></section>
+    </main>
+
     <footer id="footer-container">
       <div class="footer-btns">
         <ul>
